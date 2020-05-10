@@ -1,0 +1,45 @@
+import styled from 'styled-components';
+import style from '../../assets/globalStyle';
+
+export const Top = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background: ${style['theme-color']};
+  & > span {
+    color: #f1f1f1;
+    font-size: 20px;
+    line-height: 40px;
+    &.iconfont {
+      font-size: 25px;
+    }
+  }
+`;
+
+export const Tab = styled.div`
+  display: flex;
+  justify-content: space-around;
+  height: 44px;
+  background: ${style['theme-color']};
+  a {
+    flex: 1;
+    padding: 2px 0;
+    color: #e4e4e4;
+    font-size: 14px;
+    &.selected {
+      span {
+        padding: 3px 0;
+        color: #f1f1f1;
+        font-weight: 700;
+        border-bottom: 2px solid #f1f1f1;
+      }
+    }
+  }
+`;
+
+export const TabItem = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+`;

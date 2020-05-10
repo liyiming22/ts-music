@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/interface-name-prefix */
 declare module 'speed-measure-webpack-plugin' {
   import { Configuration, Plugin } from 'webpack';
 

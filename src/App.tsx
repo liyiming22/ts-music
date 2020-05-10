@@ -1,35 +1,19 @@
-import React, { memo, useState } from 'react';
+import React from 'react';
 import { hot } from 'react-hot-loader/root';
+import { BrowserRouter } from 'react-router-dom';
+import { renderRoutes } from 'react-router-config';
 
-import './App.scss';
-
-interface CounterProps {
-  initialCount?: number;
-}
-
-const Counter = memo(function Counter({ initialCount = 0 }: CounterProps) {
-  const [count, setCount] = useState(initialCount);
-
-  const add = () => {
-    setCount(count + 1);
-  };
-
-  return (
-    <div className="counter">
-      <input type="text" value={count} readOnly />
-      <button type="button" onClick={add}>
-        +
-      </button>
-    </div>
-  );
-});
+import GlobalStyle from './style';
+import IconStyle from './assets/iconfont/iconfont';
+import routes from './routes';
 
 function App() {
   return (
-    <div className="app">
-      <h2 className="title">This is a template project.</h2>
-      <Counter />
-    </div>
+    <BrowserRouter>
+      <GlobalStyle />
+      <IconStyle />
+      {renderRoutes(routes)}
+    </BrowserRouter>
   );
 }
 
