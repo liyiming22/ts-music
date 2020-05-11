@@ -14,7 +14,8 @@
     "lint": "yarn lint-eslint && yarn lint-stylelint",
     "lint-eslint": "eslint -c .eslintrc.js --ext .ts,.tsx,.js {src,scripts}/**/*.{ts,tsx,js} --no-error-on-unmatched-pattern",
     "lint-stylelint": "stylelint --config .stylelintrc.json src/**/*.{css,ts}",
-    "prettier": "prettier --write '**/*.{ts,tsx,js,css}'"
+    "prettier": "prettier --write '**/*.{ts,tsx,js,css}'",
+    "commit": "git cz"
   },
   "browserslist": [
     "last 2 versions",
