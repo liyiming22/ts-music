@@ -7,7 +7,7 @@
     "typescript.tsdk": "./node_modules/typescript/lib",
     // 使用 eslint，就不需要内置的提示了
     // "typescript.format.enable": false,
-    // "typescript.validate.enable": false,   // 这个注释掉，因为要对未使用声明、变量进行校验
+    "typescript.validate.enable": false,   // 这个注释掉，因为要对未使用声明、变量进行校验
     // 指定哪些文件不参与搜索
     "search.exclude": {
         "**/node_modules": true,

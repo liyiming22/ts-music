@@ -67,6 +67,12 @@ const Scroll = forwardRef<IScrollRef, IScrollProps>((props, ref) => {
   }, []);
 
   useEffect(() => {
+    if (refresh && bScroll) {
+      bScroll.refresh();
+    }
+  });
+
+  useEffect(() => {
     if (!bScroll || !onBScroll) return;
     bScroll.on('scroll', (scroll: number) => {
       onBScroll(scroll);
@@ -125,7 +131,7 @@ const Scroll = forwardRef<IScrollRef, IScrollProps>((props, ref) => {
     };
   });
 
-  return <ScrollContainer>{props.children}</ScrollContainer>;
+  return <ScrollContainer ref={scrollContainerRef}>{props.children}</ScrollContainer>;
 });
 
 export default React.memo(Scroll);

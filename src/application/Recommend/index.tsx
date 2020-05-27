@@ -2,6 +2,7 @@
 import React from 'react';
 import Slider from '../../components/Slider';
 import RecommendList from '../../components/List';
+import Scroll from '../../components/Scroll';
 import { Content } from './style';
 
 const bannerList = [1, 2, 3, 4].map((item) => {
@@ -22,8 +23,12 @@ const recommendList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
 const Recommend: React.FC = function Recommend() {
   return (
     <Content>
-      <Slider bannerList={bannerList} />
-      <RecommendList recommendList={recommendList} />
+      <Scroll className="list">
+        <div>
+          <Slider bannerList={bannerList} />
+          <RecommendList recommendList={recommendList} />
+        </div>
+      </Scroll>
     </Content>
   );
 };
