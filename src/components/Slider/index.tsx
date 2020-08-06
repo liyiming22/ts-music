@@ -3,10 +3,6 @@ import Swiper from 'swiper';
 import 'swiper/css/swiper.css';
 import { SliderContainer } from './style';
 
-export type bannerType = {
-  imageUrl: string;
-};
-
 interface ISliderProps {
   bannerList: bannerType[];
 }

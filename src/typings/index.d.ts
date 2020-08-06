@@ -31,3 +31,14 @@ declare module '*.png' {
   const path: string;
   export default path;
 }
+
+declare type bannerType = {
+  imageUrl: string;
+};
+
+declare type recommendType = {
+  id: number;
+  picUrl: string;
+  playCount: number;
+  name: string;
+};

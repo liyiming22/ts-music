@@ -1357,9 +1357,9 @@
     "@types/react" "*"
 
 "@types/react-native@*":
-  version "0.62.12"
-  resolved "https://registry.npm.taobao.org/@types/react-native/download/@types/react-native-0.62.12.tgz?cache=0&sync_timestamp=1590576463283&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Freact-native%2Fdownload%2F%40types%2Freact-native-0.62.12.tgz#24407983b527749f37b512cd5d2bdc6133810b17"
-  integrity sha1-JEB5g7UndJ83tRLNXSvcYTOBCxc=
+  version "0.63.4"
+  resolved "https://registry.npm.taobao.org/@types/react-native/download/@types/react-native-0.63.4.tgz#4610b0df0e5f0db4c68d495754ad9f8bc3b8893f"
+  integrity sha1-RhCw3w5fDbTGjUlXVK2fi8O4iT8=
   dependencies:
     "@types/react" "*"
 
@@ -1407,14 +1407,6 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/redux-immutable@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.npm.taobao.org/@types/redux-immutable/download/@types/redux-immutable-4.0.1.tgz#c9645af458cfcbf019b9e6b4185efcc842e3dac5"
-  integrity sha1-yWRa9FjPy/AZuea0GF78yELj2sU=
-  dependencies:
-    immutable "^4.0.0-rc.1"
-    redux "^4.0.0"
-
 "@types/relateurl@*":
   version "0.2.28"
   resolved "https://registry.npm.taobao.org/@types/relateurl/download/@types/relateurl-0.2.28.tgz#6bda7db8653fa62643f5ee69e9f69c11a392e3a6"
@@ -1433,15 +1425,15 @@
   resolved "https://registry.npm.taobao.org/@types/source-list-map/download/@types/source-list-map-0.1.2.tgz#0078836063ffaf17412349bba364087e0ac02ec9"
   integrity sha1-AHiDYGP/rxdBI0m7o2QIfgrALsk=
 
-"@types/styled-components@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.npm.taobao.org/@types/styled-components/download/@types/styled-components-5.1.0.tgz#24d3412ba5395aa06e14fbc93c52f9454cebd0d6"
-  integrity sha1-JNNBK6U5WqBuFPvJPFL5RUzr0NY=
+"@types/styled-components@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.npm.taobao.org/@types/styled-components/download/@types/styled-components-5.1.2.tgz#652af475b4af917b355ea1c3068acae63d46455f"
+  integrity sha1-ZSr0dbSvkXs1XqHDBorK5j1GRV8=
   dependencies:
     "@types/hoist-non-react-statics" "*"
     "@types/react" "*"
     "@types/react-native" "*"
-    csstype "^2.2.0"
+    csstype "^3.0.2"
 
 "@types/swiper@^5.3.0":
   version "5.3.1"
@@ -2073,9 +2065,9 @@ autoprefixer@^9.0.0, autoprefixer@^9.6.1, autoprefixer@^9.7.6:
     postcss "^7.0.30"
     postcss-value-parser "^4.1.0"
 
-axios@^0.19.0:
+axios@^0.19.0, axios@^0.19.2:
   version "0.19.2"
-  resolved "https://registry.npm.taobao.org/axios/download/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
+  resolved "https://registry.npm.taobao.org/axios/download/axios-0.19.2.tgz?cache=0&sync_timestamp=1594827868651&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxios%2Fdownload%2Faxios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
   integrity sha1-PqNsXYgY0NX4qKl6bTa4bNwAyyc=
   dependencies:
     follow-redirects "1.5.10"
@@ -3290,6 +3282,11 @@ csstype@^2.2.0:
   version "2.6.10"
   resolved "https://registry.npm.taobao.org/csstype/download/csstype-2.6.10.tgz?cache=0&sync_timestamp=1586935655811&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcsstype%2Fdownload%2Fcsstype-2.6.10.tgz#e63af50e66d7c266edb6b32909cfd0aabe03928b"
   integrity sha1-5jr1DmbXwmbttrMpCc/Qqr4Dkos=
+
+csstype@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.npm.taobao.org/csstype/download/csstype-3.0.2.tgz?cache=0&sync_timestamp=1596101747156&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcsstype%2Fdownload%2Fcsstype-3.0.2.tgz#ee5ff8f208c8cd613b389f7b222c9801ca62b3f7"
+  integrity sha1-7l/48gjIzWE7OJ97IiyYAcpis/c=
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -4917,11 +4914,6 @@ ignore@^5.0.4, ignore@^5.0.5, ignore@^5.1.4:
   version "5.1.6"
   resolved "https://registry.npm.taobao.org/ignore/download/ignore-5.1.6.tgz#643194ad4bf2712f37852e386b6998eff0db2106"
   integrity sha1-ZDGUrUvycS83hS44a2mY7/DbIQY=
-
-immutable@^4.0.0-rc.1, immutable@^4.0.0-rc.12:
-  version "4.0.0-rc.12"
-  resolved "https://registry.npm.taobao.org/immutable/download/immutable-4.0.0-rc.12.tgz#ca59a7e4c19ae8d9bf74a97bdf0f6e2f2a5d0217"
-  integrity sha1-ylmn5MGa6Nm/dKl73w9uLypdAhc=
 
 import-cwd@^2.0.0:
   version "2.1.0"
@@ -8002,11 +7994,6 @@ redent@^3.0.0:
   dependencies:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
-
-redux-immutable@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npm.taobao.org/redux-immutable/download/redux-immutable-4.0.0.tgz#3a1a32df66366462b63691f0e1dc35e472bbc9f3"
-  integrity sha1-Ohoy32Y2ZGK2NpHw4dw15HK7yfM=
 
 redux-thunk@^2.3.0:
   version "2.3.0"

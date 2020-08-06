@@ -2,15 +2,8 @@ import React from 'react';
 import { ListWrapper, ListItem, List } from './style';
 import { getCount } from '../../utils';
 
-export type recommendListType = {
-  id: number;
-  picUrl: string;
-  playCount: number;
-  name: string;
-};
-
 interface IListProps {
-  recommendList: recommendListType[];
+  recommendList: recommendType[];
 }
 
 const RecommendList: React.FC<IListProps> = function RecommendList({ recommendList = [] }) {
