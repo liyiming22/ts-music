@@ -5,6 +5,7 @@ import reducer from './reducer';
 declare global {
   // eslint-disable-next-line @typescript-eslint/interface-name-prefix
   interface Window {
+    // eslint-disable-next-line no-undef
     __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
   }
 }

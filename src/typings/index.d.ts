@@ -42,3 +42,8 @@ declare type recommendType = {
   playCount: number;
   name: string;
 };
+
+declare interface IRecommendState {
+  bannerList: bannerType[];
+  recommendList: recommendType[];
+}

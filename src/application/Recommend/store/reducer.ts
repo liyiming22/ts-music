@@ -1,13 +1,27 @@
-import * as actionTypes from './constants';
+import { Reducer } from 'redux';
+import { CHANGE_BANNER, CHANGE_RECOMMEND_LIST, RecommendActionTypes } from './constants';
 
-type RecommendStateType = {
-  bannerList: bannerType[],
-  recommendList: recommendType[]
-}
-
-const defaultState: RecommendStateType = {
+const defaultState: IRecommendState = {
   bannerList: [],
-  recommendList: []
-}
+  recommendList: [],
+};
 
-export default (state = defaultState, )
+const recommendReducer: Reducer<IRecommendState, RecommendActionTypes> = (
+  state = defaultState,
+  action,
+) => {
+  const newState: IRecommendState = JSON.parse(JSON.stringify(state));
+  switch (action.type) {
+    case CHANGE_BANNER:
+      newState.bannerList = action.payload;
+      break;
+    case CHANGE_RECOMMEND_LIST:
+      newState.recommendList = action.payload;
+      break;
+    default:
+      break;
+  }
+  return newState;
+};
+
+export default recommendReducer;

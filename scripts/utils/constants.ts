@@ -5,7 +5,7 @@ const __DEV__ = process.env.NODE_ENV !== 'production';
 const ENABLE_ANALYZE = !!argv.analyze;
 const ENABLE_OPEN = !!argv.open;
 
-const HOST = '192.168.0.107';
+const HOST = '127.0.0.1';
 const DEFAULT_PORT = 3000;
 const COPYRIGHT = `/** @preserve Powered by WebIM (https://github.com/YeomanLi/WebIM) */`;
 
